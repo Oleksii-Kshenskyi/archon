@@ -12,7 +12,8 @@ This application doesn't have a fixed development schedule or planning whatsoeve
 # Current priorities:
 
 1. [DONE] Implement a basic HTTP request client that gets the HTTP get request result: response's status and body.
-2. [WE ARE HERE] Implement an ability to HTTP GET several URLs (i.e. from a file) instead of just one. The group of URL can be fetched e.g. from a file.
+2. [DONE] Implement an ability to HTTP GET several URLs (e.g. from a file) instead of just one.
+2.5. [WE ARE HERE] Remake the for loop of HTTP GETs into a closure to parallelize with Rayon in the future.
 3. Parallelize: each URL should be requested in a separate thread. Functional approach preferred. Use threadpool or similar.
 4. Instead of just HTTP GET, scan which ports are open on the target URL. Also in parallel.
 5. Figure out how to make the port scanner async.
